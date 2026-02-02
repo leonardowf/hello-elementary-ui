@@ -12,6 +12,9 @@ struct ContentView {
         div {
             h1 { "Swift in the Browser!" }
 
+			p { "Wow, this is working in Swift!" }
+			p( .style(["color": "red"])) { "And it has hot reload" }
+
             Counter(value: $count)
 
             if count > 3 {
